@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=cyrillic');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    background: #000;
+}
+
+.screen {
+    position: relative;
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.slider:hover .screen {
+    opacity: 0.1;
+}
+
+.slider .screen:hover {
+    flex-grow: 5;
+    opacity: 1;
+}
+
+.screen:nth-child(1) {
+    background-image: url(../img/site-example.png);
+    background-color: #fec00e;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.screen:nth-child(2) {
+    background-image: url(../img/vscode-icon.png);
+    background-color: #373277;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.screen:nth-child(3) {
+    background-image: url(../img/github-logo.png);
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.screen .screen-item {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    background-color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    transform: translateX(100%);
+    transition: 0.5s;
+    text-align: center;
+}
+
+.screen:hover .screen-item {
+    transform: translateX(0);
+    transition-delay: 0.5s;
+}
+
+.screen-item .screen-text {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
