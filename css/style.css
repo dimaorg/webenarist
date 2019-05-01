@@ -52,7 +52,7 @@ button {
         text-transform: uppercase;
         color: #000;
         font-weight: 700;
-        transition: 0.8s;
+        transition: 0.5s;
         padding: 10px;
 	}
 
@@ -68,7 +68,7 @@ button {
 	}
 
     .site-navigation__list:hover .site-navigatioon__item a {
-		opacity: 0.1;
+		opacity: 0.6;
     }
 
     .site-navigation__list .site-navigatioon__item a:hover {
@@ -155,16 +155,15 @@ button {
 
 	.features {
 		padding: 40px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		background-color: #fff;
 		box-sizing: border-box;
 	}
 
 	.features-title {
+		margin: auto;
 		box-sizing: border-box;
-		flex-basis: 100px;
+		width: 400px;
+		text-align: center;
 		padding: 40px 0;
 		color: #000;
 		text-transform: uppercase;
@@ -181,6 +180,8 @@ button {
 		margin-top: 130px;
 		display: flex;
 		transition: 0.5s;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.features-item {
@@ -222,6 +223,82 @@ button {
 		visibility: visible;
 		opacity: 1;
 		transform: translate(-50%, 0px);
+	}
+
+	.main-footer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.social-list {
+		position: relative;
+		display: flex;
+		margin: 50px 0;
+	}
+
+	.social-item {
+		position: relative;
+		width: 60px;
+		height: 60px;
+		margin: 0 30px;
+		transform: rotate(-30deg) skew(25deg);
+	}
+
+	.social-item span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #000;
+		transition: 0.5s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		font-size: 30px;
+	}
+
+	.social-item:hover span:nth-of-type(5) {
+		transform: translate(40px,-40px);
+		opacity: 1;
+	}
+
+	.social-item:hover span:nth-of-type(4) {
+		transform: translate(30px,-30px);
+		opacity: 0.8;
+	}
+
+	.social-item:hover span:nth-of-type(3) {
+		transform: translate(20px,-20px);
+		opacity: 0.6;
+	}
+
+	.social-item:hover span:nth-of-type(2) {
+		transform: translate(10px,-10px);
+		opacity: 0.4;
+	}
+
+	.social-item:hover span:nth-of-type(1) {
+		transform: translate(0,0);
+		opacity: 0.2;
+	}
+
+	.social-item:nth-of-type(1) span {
+		background-color: #3b5999;
+	}
+
+	.social-item:nth-of-type(2) span {
+		background-color: #55acee;
+	}
+
+	.social-item:nth-of-type(3) span {
+		background-color: #e4405f;
+	}
+
+	.social-item:nth-of-type(4) span {
+		background-color: #4c75a3;
 	}
 }
 
