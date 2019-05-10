@@ -391,31 +391,19 @@ div.mobile-list {
 
     .slider {
         position: relative;
-        height: 100vh;
-        flex-grow: 1;
-        display: flex;
+		flex-grow: 1;
+		height: auto;
         background: #000;
     }
 
     .screen {
-        position: relative;
-        flex-grow: 2;
+		position: relative;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         overflow: hidden;
-        transition: 1s;
-    }
-
-	.slider:hover .screen,
-	.slider:focus .screen {
-        opacity: 0.1;
-    }
-
-	.slider .screen:hover,
-	.slider .screen:focus {
-        flex-grow: 5;
-        opacity: 1;
+		transition: 1s;
+		height: 600px;
     }
 
     .screen:nth-of-type(1) {
@@ -695,7 +683,8 @@ div.mobile-list {
         justify-content: flex-end;
         align-items: flex-end;
         overflow: hidden;
-        transition: 1s;
+		transition: 1s;
+		height: inherit;
     }
 
 	.slider:hover .screen,
