@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Webenarist - обучение программированию</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-	<link rel="shortrcut icon" href="favicon.ico">
+	<title>Webenarist - обучение программированию</title>
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="shortrcut icon" href="favicon.ico">
 </head>
 <body>
     <nav class="main-navigation">
@@ -15,50 +15,56 @@
                 <li class="site-navigatioon__item"><a href="#"></a></li>
                 <li class="site-navigatioon__item"><a href="#">Курсы</a></li>
                 <li class="site-navigatioon__item"><a href="#">О нас</a></li>
-                <li class="site-navigatioon__item"><a href="#">Наша команда</a></li>
-            </ul>
+				<li class="site-navigatioon__item"><a href="#">Наша команда</a></li>
+				<li class="site-navigatioon__item" id="menu"><a href="#"></a></li>
+			</ul>
+			<div class="mobile-none" id="mobile-list">
+				<div class="site-navigation__mobile"><a href="#">Курсы</a></div>
+                <div class="site-navigation__mobile"><a href="#">О нас</a></div>
+				<div class="site-navigation__mobile"><a href="#">Наша команда</a></div>
+			</div>
         </div>
     </nav>
-    <h1 class="visually-hidden">Сайт по обучению программированию «Webenarist»</h1>
     <main class="container">
-        <section class="slider">
-            <h2 class="visually-hidden">Слайдер для приобретенных навыков</h2>
-            <div class="screen">
-                <div class="screen-item">
-                    <span class="screen-text">Научимся делать адаптивные сайты с красивым кодом</span>
-                </div>
-            </div>
-            <div class="screen">
-                <div class="screen-item">
-                    <span class="screen-text">Научимся работать в отличных текстовых редакторах</span>
-                </div>
-            </div>
-            <div class="screen">
-                <div class="screen-item">
-                    <span class="screen-text">Научимся работать с Git и GitHub</span>
-                </div>
-            </div>
-		</section>
-		<section class="features">
-			<h2 class="features-title">Преимущества обучения у нас:</h2>
-			<ul class="features-list">
-				<li class="features-item">
-					<div class="content">
-						<span>Наше обучение абсолютно бесплатно</span>
+		<h1 class="visually-hidden">Сайт по обучению программированию «Webenarist»</h1>
+			<section class="slider">
+				<h2 class="visually-hidden">Слайдер для приобретенных навыков</h2>
+				<div class="screen">
+					<div class="screen-item">
+						<span class="screen-text">Научимся делать адаптивные сайты с красивым кодом</span>
 					</div>
-				</li>
-				<li class="features-item">
-					<div class="content">
-						<span>Много лекций и видеоматериалов для обучения</span>
+				</div>
+				<div class="screen">
+					<div class="screen-item">
+						<span class="screen-text">Научимся работать в отличных текстовых редакторах</span>
 					</div>
-				</li>
-				<li class="features-item">
-					<div class="content">
-						<span>Обучение на практике, а не на словах</span>
+				</div>
+				<div class="screen">
+					<div class="screen-item">
+						<span class="screen-text">Научимся работать с Git и GitHub</span>
 					</div>
-				</li>
-			</ul>
-		</section>
+				</div>
+			</section>
+			<section class="features">
+				<h2 class="features-title">Преимущества обучения у нас:</h2>
+				<ul class="features-list">
+					<li class="features-item">
+						<div class="content">
+							<span>Наше обучение абсолютно бесплатно</span>
+						</div>
+					</li>
+					<li class="features-item">
+						<div class="content">
+							<span>Много лекций и видеоматериалов для обучения</span>
+						</div>
+					</li>
+					<li class="features-item">
+						<div class="content">
+							<span>Обучение на практике, а не на словах</span>
+						</div>
+					</li>
+				</ul>
+			</section>
 	</main>
 	<footer class="main-footer">
 		<ul class="social-list">
@@ -100,5 +106,6 @@
 			</li>
 		</ul>
 	</footer>
+	<script src="js/click.js"></script>
 </body>
 </html>
